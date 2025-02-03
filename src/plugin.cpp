@@ -1,3 +1,4 @@
+#include "Hooks.h"
 #include "Logger.h"
 #include "Manager.h"
 
@@ -7,7 +8,6 @@ void OnMessage(SKSE::MessagingInterface::Message* message) {
     }
 
     if (message->type == SKSE::MessagingInterface::kPostLoad) {
-        NoEquipStagger::Install();
     }
 
     if (message->type == SKSE::MessagingInterface::kNewGame || message->type == SKSE::MessagingInterface::kPostLoadGame) {
@@ -30,6 +30,8 @@ SKSEPluginLoad(const SKSE::LoadInterface* skse) {
 
     auto messaging = SKSE::GetMessagingInterface();
     messaging->RegisterListener("SKSE", OnMessage);
+
+    Hooks::Install();
 
     return true;
 }
