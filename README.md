@@ -33,3 +33,7 @@ Automatically imports:
 Template credit:
 
 - [Quantumyilmaz](https://github.com/Quantumyilmaz/SKSE_template)
+
+Hooks credit:
+
+- [powerofthree](https://github.com/powerof3/ItemEquipRestrictor)
