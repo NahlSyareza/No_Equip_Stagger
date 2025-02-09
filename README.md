@@ -34,6 +34,6 @@ Template credit:
 
 - [Quantumyilmaz](https://github.com/Quantumyilmaz/SKSE_template)
 
-Hooks credit:
+Hooks creditt:
 
 - [powerofthree](https://github.com/powerof3/ItemEquipRestrictor)
